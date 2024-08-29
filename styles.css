@@ -58,13 +58,27 @@ body {
 .blank {
     width: 80px;
     height: 30px;
-    margin: 5px 0;
+    margin: 0;
     background-color: #ddd;
     border: 2px dashed #aaa;
     text-align: center;
     line-height: 30px;
     font-size: 14px;
     cursor: pointer;
+    position: absolute;
+}
+
+.blank#blank-1,
+.blank#blank-3,
+.blank#blank-5 {
+    bottom: 100%;
+    transform: translateY(-100%);
+}
+
+.blank#blank-2,
+.blank#blank-4 {
+    top: 100%;
+    transform: translateY(100%);
 }
 
 .tiles-container {
@@ -77,4 +91,9 @@ body {
     height: 30px;
     background-color: #007bff;
     color: white;
-    text-align
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
