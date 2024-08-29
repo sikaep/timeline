@@ -11,7 +11,7 @@ body {
 
 .timeline-container {
     position: relative;
-    width: 600px;
+    width: 80%; /* Make the timeline container 80% of the window width */
     height: 150px;
     margin-bottom: 30px;
 }
