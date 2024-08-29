@@ -62,7 +62,7 @@ body {
     background-color: #ddd;
     border: 2px dashed #aaa;
     text-align: center;
-    line-height: 30px;
+    line-height: 100px; /* 30*/
     font-size: 14px;
     cursor: pointer;
     position: absolute;
