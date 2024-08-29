@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: ##e7fcd9;
 }
 
 .timeline-container {
@@ -56,8 +56,8 @@ body {
 }
 
 .blank {
-    width: 80px;
-    height: 30px;
+    width: 200px;
+    height: auto;
     margin: 0;
     background-color: #ddd;
     border: 2px dashed #aaa;
@@ -87,8 +87,8 @@ body {
 }
 
 .tile {
-    width: 80px;
-    height: 30px;
+    width: 200px;
+    height: auto;
     background-color: #007bff;
     color: white;
     text-align: center;
