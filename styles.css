@@ -74,13 +74,13 @@ body {
 .blank#blank-3,
 .blank#blank-5 {
     bottom: 100%;
-    transform: translateY(-50%,-150%);
+    transform: translateY(-50%,-200%);
 }
 
 .blank#blank-2,
 .blank#blank-4 {
     top: 100%;
-    transform: translateY(-50%,150%);
+    transform: translateY(-50%,200%);
 }
 
 .tiles-container {
