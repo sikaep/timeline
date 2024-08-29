@@ -57,7 +57,7 @@ body {
 
 .blank {
     width: 200px;
-    height: auto;
+    height: 300;
     margin: 0;
     background-color: #ddd;
     border: 2px dashed #aaa;
