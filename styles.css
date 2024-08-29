@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #4c7a2d;
+    background-color: #8cc269;
 }
 
 .timeline-container {
@@ -91,7 +91,7 @@ body {
 .tile {
     width: 200px;
     height: auto;
-    background-color: #8cc269;
+    background-color: #4c7a2d;
     color: white;
     text-align: center;
     line-height: 30px;
