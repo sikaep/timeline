@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Drag-and-Drop App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timeline-container">
+        <div class="arrow"></div>
+        <div class="timeline">
+            <div class="line-container">
+                <div class="vertical-line up" data-blank="1"></div>
+                <div class="blank" id="blank-1"></div>
+            </div>
+            <div class="line-container">
+                <div class="vertical-line down" data-blank="2"></div>
+                <div class="blank" id="blank-2"></div>
+            </div>
+            <div class="line-container">
+                <div class="vertical-line up" data-blank="3"></div>
+                <div class="blank" id="blank-3"></div>
+            </div>
+            <div class="line-container">
+                <div class="vertical-line down" data-blank="4"></div>
+                <div class="blank" id="blank-4"></div>
+            </div>
+            <div class="line-container">
+                <div class="vertical-line up" data-blank="5"></div>
+                <div class="blank" id="blank-5"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tiles-container">
+        <div class="tile" draggable="true" id="tile-1">Tile 1</div>
+        <div class="tile" draggable="true" id="tile-2">Tile 2</div>
+        <div class="tile" draggable="true" id="tile-3">Tile 3</div>
+        <div class="tile" draggable="true" id="tile-4">Tile 4</div>
+        <div class="tile" draggable="true" id="tile-5">Tile 5</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
