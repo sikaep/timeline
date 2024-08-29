@@ -73,14 +73,20 @@ body {
 .blank#blank-1,
 .blank#blank-3,
 .blank#blank-5 {
-    bottom: 100%;
-    transform: translateY(-50%,-200%);
+    bottom: calc(100% - 50px); /* Position the blank at the end of the upward vertical lines */
+
+  /*  bottom: 100%;
+    
+    transform: translateY(-50%,-200%); */
 }
 
 .blank#blank-2,
 .blank#blank-4 {
-    top: 100%;
-    transform: translateY(-50%,200%);
+
+    top: calc(100% - 50px); /* Position the blank at the end of the downward vertical lines */
+
+    /*top: 100%;
+    transform: translateY(-50%,200%);*/
 }
 
 .tiles-container {
