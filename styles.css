@@ -73,7 +73,7 @@ body {
 .blank#blank-1,
 .blank#blank-3,
 .blank#blank-5 {
-    bottom: calc(100% - 150px); /* Position the blank at the end of the upward vertical lines */
+    bottom: calc(100% + 150px); /* Position the blank at the end of the upward vertical lines */
 
   /*  bottom: 100%;
     
@@ -83,7 +83,7 @@ body {
 .blank#blank-2,
 .blank#blank-4 {
 
-    top: calc(100% - 150px); /* Position the blank at the end of the downward vertical lines */
+    top: calc(100% + 150px); /* Position the blank at the end of the downward vertical lines */
 
     /*top: 100%;
     transform: translateY(-50%,200%);*/
