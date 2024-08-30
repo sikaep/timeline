@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #d9fac3;
+    background-color: #FDFBEE;
     background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg');
     background-position: top left;
     background-size: cover;
@@ -102,7 +102,7 @@ body {
 .tile {
     width: 200px;
     height: auto;
-    background-color: #406249;
+    background-color: #5E8E52;
     color: white;
     text-align: center;
     line-height: 30px;
