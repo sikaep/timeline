@@ -45,3 +45,20 @@ function drop(e) {
         e.target.appendChild(draggable);
     }
 }
+
+function shuffleTiles() {
+    // Convert NodeList to an array
+    const tilesArray = Array.from(tilesContainer.children);
+
+    // Shuffle the array using sort and Math.random
+    tilesArray.sort(() => Math.random() - 0.5);
+
+    // Clear the tiles container and append the shuffled tiles
+    tilesContainer.innerHTML = '';
+    tilesArray.forEach(tile => {
+        tilesContainer.appendChild(tile);
+    });
+}
+
+// Shuffle tiles when the page loads
+shuffleTiles();
