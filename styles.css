@@ -7,6 +7,11 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #d9fac3;
+    background-image: url('https://imgur.com/a/lrIu2Xj');
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .timeline-container {
