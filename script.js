@@ -35,14 +35,17 @@ function drop(e) {
     const id = e.dataTransfer.getData('text/plain');
     const draggable = document.getElementById(id);
 
-    // Check if the blank already has a tile
     if (e.target.classList.contains('blank')) {
         if (e.target.childElementCount > 0) {
-            // If there's already a tile in the blank, move it back to the tiles container
+            // Move the existing tile back to the tiles container
             const existingTile = e.target.firstElementChild;
             tilesContainer.appendChild(existingTile);
         }
+        // Place the dragged tile into the blank
         e.target.appendChild(draggable);
+    } else if (e.target.classList.contains('tiles-container')) {
+        // Allow the tile to be returned to the pile
+        tilesContainer.appendChild(draggable);
     }
 }
 
