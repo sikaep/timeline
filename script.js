@@ -1,5 +1,6 @@
 const blanks = document.querySelectorAll('.blank');
 const tiles = document.querySelectorAll('.tile');
+const tilesContainer = document.querySelector('.tiles-container');
 
 tiles.forEach(tile => {
     tile.addEventListener('dragstart', dragStart);
@@ -34,7 +35,13 @@ function drop(e) {
     const id = e.dataTransfer.getData('text/plain');
     const draggable = document.getElementById(id);
 
-    if (e.target.classList.contains('blank') && e.target.childElementCount === 0) {
+    // Check if the blank already has a tile
+    if (e.target.classList.contains('blank')) {
+        if (e.target.childElementCount > 0) {
+            // If there's already a tile in the blank, move it back to the tiles container
+            const existingTile = e.target.firstElementChild;
+            tilesContainer.appendChild(existingTile);
+        }
         e.target.appendChild(draggable);
     }
 }
